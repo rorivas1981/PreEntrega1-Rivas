@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <title>Condicionales</title>
+    <title>Simulador de Préstamo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/condicionales.js"></script>
-</head>
-<body>
+    <script src="js/index.js"></script>
 
-    
-    
+    <head>
+        <title>Simulador de Préstamo</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+
+<body>
+    <div class="container">
+
+        <h1>Simulador de Préstamo</h1>
+        <form>
+            <label for="monto">Valor a Solicitar (USD):</label>
+            <input type="number" inputmode="numeric" id="monto" required>
+
+            <label for="cuotas">Cantidad de Cuotas (12-24):</label>
+            <input type="number" inputmode="numeric" id="cuotas" required>
+
+            <button type="button" onclick="simularPrestamo()">Simular</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+
+    <h2>Al seleccionar Simular se ejecuta DevTools</h2>
+
 </body>
+
 </html>
